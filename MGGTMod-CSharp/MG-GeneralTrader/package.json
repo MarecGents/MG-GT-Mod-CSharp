@@ -1,0 +1,10 @@
+{
+    "name": "MGMod",
+    "version": "0.8.0",
+    "main": "MGMod.dll",
+    "license": "MIT license",
+    "author": "MarecGents",
+    "sptVersion": "4.0.0",
+    "isBundleMod": true,
+    "dependencies": {}
+}

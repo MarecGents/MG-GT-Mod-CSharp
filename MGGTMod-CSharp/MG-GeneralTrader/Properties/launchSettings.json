@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "MG-GeneralTrader": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:6688;http://localhost:6689"
+    }
+  }
+}

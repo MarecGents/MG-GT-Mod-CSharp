@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Workdata\\Git_repositories\\MGModSeries\\MGGTMod-CSharp\\MGGTMod-CSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27E6A788-8035-46C7-978D-93286016DCAC}|MG-GeneralTrader\\MG-GeneralTrader.csproj|e:\\workdata\\git_repositories\\mgmodseries\\mggtmod-csharp\\mggtmod-csharp\\mg-generaltrader\\mg-generaltrader.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{27E6A788-8035-46C7-978D-93286016DCAC}|MG-GeneralTrader\\MG-GeneralTrader.csproj|solutionrelative:mg-generaltrader\\mg-generaltrader.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27E6A788-8035-46C7-978D-93286016DCAC}|MG-GeneralTrader\\MG-GeneralTrader.csproj|e:\\workdata\\git_repositories\\mgmodseries\\mggtmod-csharp\\mggtmod-csharp\\mg-generaltrader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27E6A788-8035-46C7-978D-93286016DCAC}|MG-GeneralTrader\\MG-GeneralTrader.csproj|solutionrelative:mg-generaltrader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MG-GeneralTrader",
+              "DocumentMoniker": "E:\\Workdata\\Git_repositories\\MGModSeries\\MGGTMod-CSharp\\MGGTMod-CSharp\\MG-GeneralTrader\\MG-GeneralTrader.csproj",
+              "RelativeDocumentMoniker": "MG-GeneralTrader\\MG-GeneralTrader.csproj",
+              "ToolTip": "E:\\Workdata\\Git_repositories\\MGModSeries\\MGGTMod-CSharp\\MGGTMod-CSharp\\MG-GeneralTrader\\MG-GeneralTrader.csproj",
+              "RelativeToolTip": "MG-GeneralTrader\\MG-GeneralTrader.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-03T05:16:13.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Workdata\\Git_repositories\\MGModSeries\\MGGTMod-CSharp\\MGGTMod-CSharp\\MG-GeneralTrader\\Program.cs",
+              "RelativeDocumentMoniker": "MG-GeneralTrader\\Program.cs",
+              "ToolTip": "E:\\Workdata\\Git_repositories\\MGModSeries\\MGGTMod-CSharp\\MGGTMod-CSharp\\MG-GeneralTrader\\Program.cs",
+              "RelativeToolTip": "MG-GeneralTrader\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T05:15:58.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
