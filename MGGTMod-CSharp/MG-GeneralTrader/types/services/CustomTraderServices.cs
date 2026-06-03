@@ -399,6 +399,6 @@ public class CustomTraderServices
 
     public void Log(string data, LogTextColor textColor)
     {
-        mGUtils.Log("独立商人", data, textColor);
+        mGUtils.Log_GT("商人系统", data, textColor);
     }
 }

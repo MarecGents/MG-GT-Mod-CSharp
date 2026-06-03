@@ -219,7 +219,10 @@ public class MGUtils(
     {
         logger.LogWithColor($"[MGMod][{server}]：" + data, textColor);
     }
-
+    public void Log_GT(string server,string data, LogTextColor textColor)
+    {
+        logger.LogWithColor($"[MG通用商人框架][{server}]：" + data, textColor);
+    }
     public void TestOutput<T>(T data)
     {
         string data2String = jsonUtil.Serialize(data);

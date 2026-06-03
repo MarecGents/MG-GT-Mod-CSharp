@@ -16,12 +16,9 @@
 		<Content Include="bundles\**">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="traders\**">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-		<Content Include="res\**">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
+<!--		<Content Include="traders\**">-->
+<!--			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
+<!--		</Content>-->
 	</ItemGroup>
 	
 	<ItemGroup>
