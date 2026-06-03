@@ -15,7 +15,6 @@ namespace _MGGTmod.types.services;
 public class ConfigSettingServices
 {
     private ISptLogger<ConfigSettingServices> logger;
-    private ConfigSettingType? configJson;
     private MGUtils mGUtils;
     private CustomTraderServices  customTraderServices;
     private TestServices testServices;
