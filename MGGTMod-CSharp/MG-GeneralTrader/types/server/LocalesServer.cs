@@ -3,8 +3,8 @@ using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Services;
 
-using _MGMod.types.models.EFT.locales;
-namespace _MGMod.types.server;
+using _MGGTmod.types.models.EFT.locales;
+namespace _MGGTmod.types.server;
 
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class LocalesServer(

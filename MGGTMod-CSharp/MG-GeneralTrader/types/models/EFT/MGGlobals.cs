@@ -1,6 +1,6 @@
 ﻿using SPTarkov.Server.Core.Models.Eft.Common;
 
-namespace _MGMod.types.models.EFT;
+namespace _MGGTmod.types.models.EFT;
 public interface ICustomItemBuffs
 {
     public Dictionary<string, List<Buff>>? Buffs { get; set; }

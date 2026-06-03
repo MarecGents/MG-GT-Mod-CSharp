@@ -1,4 +1,4 @@
-﻿using _MGMod.types.models.Paths;
+﻿using _MGGTmod.types.models.Paths;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Extensions;
@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using SPTarkov.Server.Core.Models.Logging;
 using Path = System.IO.Path;
 
-namespace _MGMod.types.utils;
+namespace _MGGTmod.types.utils;
 [Injectable(TypePriority = OnLoadOrder.PreSptModLoader + 1)]
 
 public class MGUtils(

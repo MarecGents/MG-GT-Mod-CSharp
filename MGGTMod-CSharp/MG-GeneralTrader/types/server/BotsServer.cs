@@ -1,11 +1,11 @@
-﻿using _MGMod.types.models.Custom;
+﻿using _MGGTmod.types.models.Custom;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Spt.Bots;
 using SPTarkov.Server.Core.Services;
 
-namespace _MGMod.types.server;
+namespace _MGGTmod.types.server;
 
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class BotsServer(
@@ -44,12 +44,5 @@ public class BotsServer(
             }
         }
     }
-    public void MGmodBots(MGModConfig_Bot? BotSetting)
-    {
-        // 功能：AI血量 AIHealth
-        if ( BotSetting?.AIHealth != 1)
-        {
-            SetBotsHealth(BotSetting.AIHealth);
-        }
-    }
+    
 }

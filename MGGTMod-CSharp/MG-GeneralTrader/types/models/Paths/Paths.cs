@@ -1,4 +1,4 @@
-﻿namespace _MGMod.types.models.Paths;
+﻿namespace _MGGTmod.types.models.Paths;
 
 public static class Paths
 {

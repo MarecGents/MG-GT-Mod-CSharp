@@ -1,13 +1,13 @@
 ﻿using System.Text.Json.Serialization;
-using _MGMod.types.models.EFT.templetes;
-using _MGMod.types.models.Paths;
-using _MGMod.types.utils;
+using _MGGTmod.types.models.EFT.templetes;
+using _MGGTmod.types.models.Paths;
+using _MGGTmod.types.utils;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Utils;
 
-namespace _MGMod.types.services;
+namespace _MGGTmod.types.services;
 
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class TestServices

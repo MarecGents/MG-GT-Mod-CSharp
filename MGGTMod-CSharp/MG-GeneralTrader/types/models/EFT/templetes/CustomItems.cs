@@ -4,7 +4,7 @@ using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Enums;
 using SPTarkov.Server.Core.Models.Spt.Mod;
 
-namespace _MGMod.types.models.EFT.templetes;
+namespace _MGGTmod.types.models.EFT.templetes;
 
 public class BrothersItem : ICustomItemBuffs
 {

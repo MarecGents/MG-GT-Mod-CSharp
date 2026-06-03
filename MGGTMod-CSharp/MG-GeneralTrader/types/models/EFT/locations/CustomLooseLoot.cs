@@ -1,7 +1,7 @@
-﻿using _MGMod.types.models.EFT.traders;
+﻿using _MGGTmod.types.models.EFT.traders;
 using SPTarkov.Server.Core.Models.Eft.Common;
 
-namespace _MGMod.types.models.EFT.locations;
+namespace _MGGTmod.types.models.EFT.locations;
 
 public class CustomLooseLoot
 {

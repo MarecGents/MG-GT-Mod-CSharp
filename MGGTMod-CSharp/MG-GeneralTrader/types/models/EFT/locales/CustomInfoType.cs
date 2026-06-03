@@ -1,6 +1,6 @@
 ﻿using SPTarkov.Server.Core.Models.Common;
 
-namespace _MGMod.types.models.EFT.locales;
+namespace _MGGTmod.types.models.EFT.locales;
 
 public class GeneralInfo
 {

@@ -1,6 +1,6 @@
 ﻿using SPTarkov.Server.Core.Models.Common;
 
-namespace _MGMod.types.models.Custom;
+namespace _MGGTmod.types.models.Custom;
 
 public class ConfigSettingType
 {

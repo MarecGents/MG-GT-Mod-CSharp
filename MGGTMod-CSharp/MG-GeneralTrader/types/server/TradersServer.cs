@@ -1,12 +1,12 @@
-﻿using _MGMod.types.models.Custom;
-using _MGMod.types.models.EFT.traders;
+﻿using _MGGTmod.types.models.Custom;
+using _MGGTmod.types.models.EFT.traders;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Services;
 
-namespace _MGMod.types.server;
+namespace _MGGTmod.types.server;
 
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class TradersServer(
@@ -29,29 +29,5 @@ public class TradersServer(
             Template = assorts.currency
         }]];
         TraderAssort.LoyalLevelItems[rId] = assorts.loyal_level_items;
-    }
-    public void MGmodTraders(MGModConfig_Traders TradersSetting)
-    {
-        foreach(var trader in Traders.Keys)
-        {
-            // if (trader == "ragfair") continue;
-            var traderBase = Traders[trader].Base;
-            if (traderBase.Insurance.Availability != null && traderBase.Insurance.Availability == true) {
-                // 功能：回保速度 InsuranceTime
-                if (TradersSetting.InsuranceTime.enable)
-                {
-                    traderBase.Insurance.MinReturnHour = TradersSetting.InsuranceTime.value;
-                    traderBase.Insurance.MaxReturnHour = TradersSetting.InsuranceTime.value * 2;
-                }
-                // 功能：投保费用 InsuranceCost
-                if (TradersSetting.InsuranceCost.enable)
-                {
-                    foreach(var index in traderBase.LoyaltyLevels)
-                    {
-                        index.InsurancePriceCoefficient = TradersSetting.InsuranceCost.value * 100;
-                    }
-                }
-            }
-        }
     }
 }

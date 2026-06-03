@@ -1,7 +1,7 @@
 ﻿
 using System.Collections;
 
-namespace _MGMod.types.models.Custom;
+namespace _MGGTmod.types.models.Custom;
 
 public class KeyMapType<T>: IEnumerable<KeyValuePair<string, T>>
 {

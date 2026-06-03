@@ -1,6 +1,6 @@
 ﻿using SPTarkov.Server.Core.Models.Common;
 
-namespace _MGMod.types.models.EFT.templetes;
+namespace _MGGTmod.types.models.EFT.templetes;
 
 public class MapKeyList
 {

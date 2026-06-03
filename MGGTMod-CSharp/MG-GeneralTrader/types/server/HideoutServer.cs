@@ -1,4 +1,4 @@
-﻿using _MGMod.types.models.Custom;
+﻿using _MGGTmod.types.models.Custom;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Eft.Hideout;
@@ -6,7 +6,7 @@ using SPTarkov.Server.Core.Models.Enums.Hideout;
 using SPTarkov.Server.Core.Models.Spt.Hideout;
 using SPTarkov.Server.Core.Services;
 
-namespace _MGMod.types.server;
+namespace _MGGTmod.types.server;
 
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class HideoutServer(
@@ -170,52 +170,5 @@ public class HideoutServer(
             }
         }
     }
-    public void MGmodHideout(MGModConfig_Hideout HideoutSetting)
-    {
-        // 功能：藏身处升级时间 BuildTime
-        if (HideoutSetting.BuildTime.enable)
-        {
-            SetConstructionTime(HideoutSetting.BuildTime.value);
-        }
-        // 功能：藏身处生产时间 ProductTime
-        if (HideoutSetting.ProductTime.enable)
-        {
-            SetProductionTime(HideoutSetting.ProductTime.value);
-        }
-        // 功能：Scav宝箱
-        if (HideoutSetting.ScavCaseTime.enable)
-        {
-            SetScavecaseTime(HideoutSetting.ScavCaseTime.value);
-        }
-        // 功能：藏身处升级无限制 UpgradeNoLimit
-        if (HideoutSetting.UpgradeNoLimit)
-        {
-            SetUpgradeNoLimit();
-        }
-        // 功能：藏身处区域加成等级 BonusesLevel
-        if (HideoutSetting.BonusesLevel.enable)
-        {
-            SetBonusesLevel(HideoutSetting.BonusesLevel.value);
-        }
-        // 功能：藏身处区域无需供电 NoNeedsFuel
-        if (HideoutSetting.NoNeedsFuel)
-        {
-            SetNoNeedsFuel();
-        }
-        // 功能：健身房锻炼百分百成功 Sucess100
-        if (HideoutSetting.Qte.Sucess100)
-        {
-            SetQteSucess100();
-        }
-        // 功能：健身房锻炼无惩罚 NoPunish
-        if (HideoutSetting.Qte.NoPunish)
-        {
-            SetQteNoPunish();
-        }
-        // 功能：健身房锻炼奖励倍率 RewardMultiple
-        if (HideoutSetting.Qte.RewardMultiple.enable)
-        {
-            SetQteRewardMultiple(HideoutSetting.Qte.RewardMultiple.value);
-        }
-    }
+    
 }

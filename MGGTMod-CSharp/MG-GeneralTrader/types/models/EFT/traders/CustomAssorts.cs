@@ -1,7 +1,7 @@
 ﻿using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 
-namespace _MGMod.types.models.EFT.traders;
+namespace _MGGTmod.types.models.EFT.traders;
 
 public class CustomItemAssorts
 {

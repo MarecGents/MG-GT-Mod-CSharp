@@ -1,11 +1,11 @@
-﻿using _MGMod.types.models.EFT;
-using _MGMod.types.models.EFT.locales;
-using _MGMod.types.models.EFT.locations;
-using _MGMod.types.models.EFT.templetes;
-using _MGMod.types.models.EFT.traders;
-using _MGMod.types.models.Paths;
-using _MGMod.types.server;
-using _MGMod.types.utils;
+﻿using _MGGTmod.types.models.EFT;
+using _MGGTmod.types.models.EFT.locales;
+using _MGGTmod.types.models.EFT.locations;
+using _MGGTmod.types.models.EFT.templetes;
+using _MGGTmod.types.models.EFT.traders;
+using _MGGTmod.types.models.Paths;
+using _MGGTmod.types.server;
+using _MGGTmod.types.utils;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Loaders;
@@ -17,7 +17,7 @@ using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Routers;
 using Path = System.IO.Path;
 
-namespace _MGMod.types.services;
+namespace _MGGTmod.types.services;
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class CustomTraderServices
 {
@@ -244,7 +244,7 @@ public class CustomTraderServices
         }
         
         // locales
-        localesServer.AddTraderInfo(new _MGMod.types.models.EFT.locales.TraderInfo
+        localesServer.AddTraderInfo(new _MGGTmod.types.models.EFT.locales.TraderInfo
         {
             Id = traderInfo._id,
             Desc = traderInfo.locales
