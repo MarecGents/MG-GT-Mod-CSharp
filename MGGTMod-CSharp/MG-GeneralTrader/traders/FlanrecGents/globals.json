@@ -1,0 +1,134 @@
+{
+  "Buffs": {
+    "Buffs_FG-Endurance1": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "",
+        "Value": 50
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "",
+        "Value": 6
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "Strength",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "Strength",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 2.5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 2.5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HealthRate",
+        "Chance": 0.1,
+        "Delay": 300,
+        "Duration": 60,
+        "SkillName": "",
+        "Value": -1
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 0.1,
+        "Delay": 300,
+        "Duration": 60,
+        "SkillName": "",
+        "Value": -1
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 0.1,
+        "Delay": 300,
+        "Duration": 60,
+        "SkillName": "",
+        "Value": -1
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StomachBloodloss",
+        "Chance": 0.1,
+        "Delay": 300,
+        "Duration": 60,
+        "SkillName": "",
+        "Value": -1
+      }
+    ],
+    "Buffs_FGZagustin": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "Vitality",
+        "Value": 50
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "Health",
+        "Value": 50
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "Metabolism",
+        "Value": 50
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "RemoveAllBloodLosses",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 300,
+        "SkillName": "",
+        "Value": 0
+      }
+    ]
+  }
+}

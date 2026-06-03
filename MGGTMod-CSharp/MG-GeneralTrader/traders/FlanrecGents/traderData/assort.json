@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "_id": "FGTrader_default_assort_item_01",
+      "_tpl": "9cc236080000000000000000",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": true,
+        "StackObjectsCount": 9999999
+      }
+    },
+    {
+      "_id": "FGTrader_default_assort_item_02",
+      "_tpl": "9cc236080000000000000001",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": true,
+        "StackObjectsCount": 9999999
+      }
+    }
+  ],
+  "barter_scheme": {
+    "FGTrader_default_assort_item_01": [
+      [
+        {
+          "count": 50000,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "FGTrader_default_assort_item_02": [
+      [
+        {
+          "count": 50000,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ]
+  },
+  "loyal_level_items": {
+    "FGTrader_default_assort_item_01": 1,
+    "FGTrader_default_assort_item_02": 1
+  }
+}

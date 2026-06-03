@@ -377,16 +377,23 @@ public class CustomTraderServices
         Globals globals = globalsServer.GetGlobals();
         
         // ItemPreset
-        foreach (var itemPreset in mGGlobals.ItemPresets)
+        if (mGGlobals.ItemPresets != null)
         {
-            globals.ItemPresets.Add(itemPreset.Key, itemPreset.Value);
+            foreach (var itemPreset in mGGlobals.ItemPresets)
+            {
+                globals.ItemPresets.Add(itemPreset.Key, itemPreset.Value);
+            }
         }
         
         // Buffs
-        if (mGGlobals.Buffs?.Count > 0)
+        if (mGGlobals.Buffs != null)
         {
-            globalsServer.AddBuffs(mGGlobals.Buffs);
+            if (mGGlobals.Buffs?.Count > 0)
+            {
+                globalsServer.AddBuffs(mGGlobals.Buffs);
+            }
         }
+        
         
     }
 
