@@ -1,0 +1,461 @@
+{
+  "Bot": {
+    "AIHealth": 1
+  },
+  "Config": {
+    "AirdropType": "default",
+    "AISpawnNumber": 0,
+    "RaidDefault": {
+      "enable": false,
+      "aiAmount": "AsOnline",
+      "aiDifficulty": "AsOnline",
+      "bossEnabled": true,
+      "scavWars": false,
+      "taggedAndCursed": false,
+      "enablePve": true,
+      "randomWeather": false,
+      "randomTime": false
+    },
+    "ReturnChance": {
+      "enable": false,
+      "value": 100
+    },
+    "BuyFoundInRaid": false,
+    "LootMultiple": {
+      "Container": 1,
+      "Ground": 1
+    },
+    "RandomContainer": false,
+    "USECRate": {
+      "enable": true,
+      "value": 50
+    },
+    "Sell100": false,
+    "SellFast": false,
+    "SellOptimize": false,
+    "SellNew": false,
+    "NoBlackList": false,
+    "Buffs": {
+      "BuffsWeapon": false,
+      "BuffsArmor": false
+    },
+    "UpdateTime": {
+      "enable": false,
+      "value": 300
+    },
+    "WeatherSettings": {
+      "mode": "default",
+      "clouds": {
+        "type": "default",
+        "values": [
+          -1,
+          -0.8,
+          0,
+          0.1,
+          0.15,
+          0.4,
+          0.65,
+          0.7,
+          0.9,
+          1,
+          1.2
+        ],
+        "weights": [
+          20,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "windSpeed": {
+        "type": "default",
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": [
+          6,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "rainIntensity": {
+        "Min": 0,
+        "Max": 1
+      },
+      "rain": {
+        "type": "default",
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "weights": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "fog": {
+        "type": "default",
+        "values": [
+          0.0013,
+          0.0018,
+          0.002,
+          0.004,
+          0.006
+        ],
+        "weights": [
+          30,
+          6,
+          4,
+          3,
+          1
+        ]
+      }
+    },
+    "NoLostonDeath": false,
+    "ScavEquipmentOptimize": false
+  },
+  "Globals": {
+    "EscapeNoTimeLimit": false,
+    "FleaMarketOpenLevel": false,
+    "TakeLimit": false,
+    "ScavOptimize": false,
+    "LowTaxRate": false,
+    "SellNumber": 1,
+    "LoadSpeed": {
+      "mode": "default",
+      "BaseLoadTime": 0.85,
+      "BaseUnloadTime": 0.3
+    },
+    "SuperHero": false,
+    "LootMultiplier": {
+      "Value": 1,
+      "Global": 1
+    },
+    "ArmorRepairPerfect": false,
+    "Buffs": {
+      "BuffsWeapon": false,
+      "BuffsArmor": false
+    },
+    "ExpOptimize": false
+  },
+  "Hideout": {
+    "BuildTime": {
+      "enable": false,
+      "value": 30
+    },
+    "ProductTime": {
+      "enable": false,
+      "value": 30
+    },
+    "ScavCaseTime": {
+      "enable": false,
+      "value": 30
+    },
+    "UpgradeNoLimit": false,
+    "BonusesLevel": {
+      "enable": false,
+      "value": 1
+    },
+    "NoNeedsFuel": false,
+    "Qte": {
+      "Sucess100": false,
+      "NoPunish": false,
+      "RewardMultiple": {
+        "enable": false,
+        "value": 1
+      }
+    }
+  },
+  "Locations": {
+    "RaidTime": {
+      "enable": false,
+      "value": 60
+    },
+    "BOSSSpwanChance": {
+      "enable": false,
+      "value": 10
+    },
+    "Pass100": false,
+    "Escape100": false,
+    "MapInsurance": {
+      "Bigmap": true,
+      "Factory4Day": true,
+      "Factory4Night": true,
+      "Interchange": true,
+      "Laboratory": false,
+      "Lighthouse": true,
+      "RezervBase": true,
+      "Sandbox": true,
+      "SandboxHigh": true,
+      "Shoreline": true,
+      "TarkovStreets": true,
+      "Woods": true
+    }
+  },
+  "Templates": {
+    "Examined": false,
+    "WeaponFilter": false,
+    "AmmoStack": 1,
+    "AmmoInfo": false,
+    "ContainerExpand": {
+      "67600929bd0a0549d70993f6": {
+        "enable": false,
+        "Name": "Ballistic plate case",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "62a09d3bcf4a99369e262447": {
+        "enable": false,
+        "Name": "Gingy\u94A5\u5319\u4E32",
+        "cellsH": 10,
+        "cellsV": 9,
+        "Weight": false,
+        "Filter": false
+      },
+      "5c093db286f7740a1b2617e3": {
+        "enable": false,
+        "Name": "Mr. Holodilnick\u4FDD\u6E29\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5b6d9ce188a4501afc1b2b25": {
+        "enable": false,
+        "Name": "THICC\u6B66\u5668\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5c0a840b86f7742ffa4f2482": {
+        "enable": false,
+        "Name": "THICC\u7269\u54C1\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "60b0f6c058e0b0481a09ad11": {
+        "enable": false,
+        "Name": "WZ\u94B1\u5305",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "66bc98a01a47be227a5e956e": {
+        "enable": false,
+        "Name": "\u4E3B\u64AD\u7269\u54C1\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5aafbcd986f7745e590fff23": {
+        "enable": false,
+        "Name": "\u533B\u7597\u7269\u54C1\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5d235bb686f77443f4331278": {
+        "enable": false,
+        "Name": "\u5C0F\u578BSICC\u5305",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5b7c710788a4506dec015957": {
+        "enable": false,
+        "Name": "\u5E78\u8FD0Scav\u5783\u573E\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5c127c4486f7745625356c13": {
+        "enable": false,
+        "Name": "\u5F39\u5323\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5aafbde786f774389d0cbc0f": {
+        "enable": false,
+        "Name": "\u5F39\u836F\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "567143bf4bdc2d1a0f8b4567": {
+        "enable": false,
+        "Name": "\u624B\u67AA\u6536\u7EB3\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5e2af55f86f7746d4159f07c": {
+        "enable": false,
+        "Name": "\u624B\u69B4\u5F39\u7BB1",
+        "cellsH": 14,
+        "cellsV": 1,
+        "Weight": false,
+        "Filter": false
+      },
+      "590c60fc86f77412b13fddcf": {
+        "enable": false,
+        "Name": "\u6587\u4EF6\u5305",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "59fb023c86f7746d0d4b423c": {
+        "enable": false,
+        "Name": "\u6B66\u5668\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "619cbf7d23893217ec30b689": {
+        "enable": false,
+        "Name": "\u6CE8\u5C04\u5668\u6536\u7EB3\u76D2",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "59fb042886f7746c5005a7b2": {
+        "enable": false,
+        "Name": "\u7269\u54C1\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5c093e3486f77430cb02e593": {
+        "enable": false,
+        "Name": "\u72D7\u724C\u5305",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "5783c43d2459774bbe137486": {
+        "enable": false,
+        "Name": "\u7B80\u6613\u94B1\u5305",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "619cbf9e0a7c3a1a2731940a": {
+        "enable": false,
+        "Name": "\u94A5\u5319\u5361\u6536\u7EB3\u76D2",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "59fafd4b86f7745ca07e1232": {
+        "enable": false,
+        "Name": "\u94A5\u5319\u6536\u7EB3\u5668",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      },
+      "59fb016586f7746d0d4b423a": {
+        "enable": false,
+        "Name": "\u94B1\u7BB1",
+        "cellsH": 10,
+        "cellsV": 10,
+        "Weight": false,
+        "Filter": false
+      }
+    },
+    "Safes": {
+      "SizeExpand": false,
+      "Filter": false,
+      "NoWeight": false
+    },
+    "MoneyStack": 1,
+    "Backpack": {
+      "Filter": false,
+      "SmallSize": false,
+      "NoBuff": false,
+      "NoWeight": false
+    },
+    "Armor": {
+      "Filter": false,
+      "NoBuff": false,
+      "NoWeight": false
+    },
+    "Helmet": {
+      "Filter": false,
+      "NoBuff": false,
+      "NoWeight": false
+    },
+    "EquipmentPlate": {
+      "Durability": 1,
+      "NoBuff": false,
+      "NoWeight": false
+    },
+    "KeysDurability": false,
+    "MedcDurability": 1,
+    "WeaponNoLost": false,
+    "WeaponRepairPerfect": false,
+    "MagazineCapacity": 1,
+    "T7ThermalImaging": false,
+    "ResetFree": false,
+    "QuestOptimize": false
+  },
+  "Traders": {
+    "InsuranceTime": {
+      "enable": false,
+      "value": 0
+    },
+    "InsuranceCost": {
+      "enable": false,
+      "value": 0.01
+    }
+  },
+  "MGCustom": {
+    "CustomTrader": false,
+    "CustomItem": false,
+    "CustomAssort": false,
+    "CustomProfile": false,
+    "AmmoInfo": true,
+    "KeyClassfy": false,
+    "SyncFlea": false
+  },
+  "saveTime": "2026-01-22 15:42:29"
+}
