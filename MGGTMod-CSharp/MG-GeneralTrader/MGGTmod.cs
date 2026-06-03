@@ -33,8 +33,6 @@ public class MGGTmod(
 {
     public async Task OnLoad()
     {
-        // var modPath = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
-        // logger.LogWithColor("This is MGmod", LogTextColor.Red);
         await configSettingServices.ModSetting();
     }
 }
@@ -46,7 +44,6 @@ public class PreMGmodLoad(
 {
     public Task OnLoad()
     {
-        // logger.LogWithColor("This is PreMGmodLoad", LogTextColor.Red, LogBackgroundColor.Cyan);
         return Task.CompletedTask;
     }
 }
