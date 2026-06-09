@@ -86,15 +86,16 @@ public class TemplatesServer(
                 {
                     if (slot.Properties == null || slot.Properties.Filters == null || slot.Properties.Filters.Count() == 0)
                         continue;
-                    var filterListObj = slot.Properties.Filters.ElementAtOrDefault(0);
-                    if (filterListObj == null || filterListObj.Filter == null)
-                        continue;
-                    var filter = filterListObj.Filter;
-                    foreach (var fL in _filterList)
+                    foreach (var filter in slot.Properties.Filters)
                     {
-                        if (!filter.Contains(fL.Value) || filter.Contains(fL.Key)) continue;
-                        filter.Add(fL.Key);
-                    }
+                        if(filter.Filter == null || filter.Filter.Count == 0) continue;
+                        foreach (var fL in _filterList)
+                        {
+                            if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
+                            filter.Filter.Add(fL.Key);
+                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的StackSlots", LogTextColor.Green);
+                        }
+                    } 
                 }
             }
             
@@ -104,15 +105,16 @@ public class TemplatesServer(
                 {
                     if (slot.Properties == null || slot.Properties.Filters == null || slot.Properties.Filters.Count() == 0)
                         continue;
-                    var filterListObj = slot.Properties.Filters.ElementAtOrDefault(0);
-                    if (filterListObj == null || filterListObj.Filter == null)
-                        continue;
-                    var filter = filterListObj.Filter;
-                    foreach (var fL in _filterList)
+                    foreach (var filter in slot.Properties.Filters)
                     {
-                        if (!filter.Contains(fL.Value) || filter.Contains(fL.Key)) continue;
-                        filter.Add(fL.Key);
-                    }
+                        if(filter.Filter == null || filter.Filter.Count == 0) continue;
+                        foreach (var fL in _filterList)
+                        {
+                            if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
+                            filter.Filter.Add(fL.Key);
+                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Slots", LogTextColor.Green);
+                        }
+                    } 
                 }
             }
             
@@ -122,15 +124,16 @@ public class TemplatesServer(
                 {
                     if (chamber.Properties == null || chamber.Properties.Filters == null || chamber.Properties.Filters.Count() == 0)
                         continue;
-                    var filterListObj = chamber.Properties.Filters.ElementAtOrDefault(0);   
-                    if (filterListObj == null || filterListObj.Filter == null)
-                        continue;
-                    var filter = filterListObj.Filter;
-                    foreach (var fL in _filterList)
+                    foreach (var filter in chamber.Properties.Filters)
                     {
-                        if (!filter.Contains(fL.Value) || filter.Contains(fL.Key)) continue;
-                        filter.Add(fL.Key);
-                    }
+                        if(filter.Filter == null || filter.Filter.Count == 0) continue;
+                        foreach (var fL in _filterList)
+                        {
+                            if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
+                            filter.Filter.Add(fL.Key);
+                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Chambers", LogTextColor.Green);
+                        }
+                    } 
                 }
             }
 
@@ -140,15 +143,16 @@ public class TemplatesServer(
                 {
                     if (cartridge.Properties == null || cartridge.Properties.Filters == null || cartridge.Properties.Filters.Count() == 0)
                         continue;
-                    var filterListObj = cartridge.Properties.Filters.ElementAtOrDefault(0);
-                    if (filterListObj == null || filterListObj.Filter == null)
-                        continue;
-                    var filter = filterListObj.Filter;
-                    foreach (var fL in _filterList)
+                    foreach (var filter in cartridge.Properties.Filters)
                     {
-                        if (!filter.Contains(fL.Value) || filter.Contains(fL.Key)) continue;
-                        filter.Add(fL.Key);
-                    }
+                        if(filter.Filter == null || filter.Filter.Count == 0) continue;
+                        foreach (var fL in _filterList)
+                        {
+                            if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
+                            filter.Filter.Add(fL.Key);
+                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Cartridges", LogTextColor.Green);
+                        }
+                    } 
                 }
             }
 
@@ -158,15 +162,16 @@ public class TemplatesServer(
                 {
                     if (grid.Properties == null || grid.Properties.Filters == null || grid.Properties.Filters.Count() == 0)
                         continue;
-                    var filterListObj = grid.Properties.Filters.ElementAtOrDefault(0);
-                    if (filterListObj == null || filterListObj.Filter == null)
-                        continue;
-                    var filter = filterListObj.Filter;
-                    foreach (var fL in _filterList)
+                    foreach (var filter in grid.Properties.Filters)
                     {
-                        if (!filter.Contains(fL.Value) || filter.Contains(fL.Key)) continue;
-                        filter.Add(fL.Key);
-                    }
+                        if(filter.Filter == null || filter.Filter.Count == 0) continue;
+                        foreach (var fL in _filterList)
+                        {
+                            if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
+                            filter.Filter.Add(fL.Key);
+                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Grids", LogTextColor.Green);
+                        }
+                    } 
                 }
             }
         }

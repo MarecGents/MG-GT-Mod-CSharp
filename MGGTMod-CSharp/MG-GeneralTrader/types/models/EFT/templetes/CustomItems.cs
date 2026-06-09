@@ -58,6 +58,6 @@ public class MGItems
 public class CustomTraderItems
 {
     public TemplateItem item { get; set; }
-    public string origin;
+    public string origin { get; set; }
     public List<string>? Type { get; set; }
 }

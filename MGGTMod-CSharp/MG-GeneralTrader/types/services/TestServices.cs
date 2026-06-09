@@ -1,10 +1,12 @@
 ﻿using System.Text.Json.Serialization;
 using _MGGTmod.types.models.EFT.templetes;
 using _MGGTmod.types.models.Paths;
+using _MGGTmod.types.server;
 using _MGGTmod.types.utils;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
+using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Utils;
 
 namespace _MGGTmod.types.services;
@@ -12,30 +14,29 @@ namespace _MGGTmod.types.services;
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class TestServices
 {
-    private ISptLogger<TestServices> logger;
-    private MGUtils mGUtils;
-    
+    private readonly ISptLogger<TestServices> logger;
+    private readonly MGUtils mGUtils;
+    private TemplatesServer templatesServer;
+
     public TestServices(
         ISptLogger<TestServices> _logger,
-        MGUtils _mGUtils
+        MGUtils _mGUtils,
+        TemplatesServer _templatesServer
     )
     {
         logger = _logger;
         mGUtils = _mGUtils;
+        templatesServer = _templatesServer;
     }
 
     public void Initialize()
     {
-        logger.Error(MongoId.IsValidMongoId("8ef5f317245977243854e041").ToString());
-        var test1json = mGUtils.GetJsonDataFromFile<SuperItem>(
-            new PathType
-            {
-                Path = Paths.SuperItemPath,
-                FileName = "超级狗牌包.json"
-            });
-        logger.Error(mGUtils.Serialize(test1json));
-        
+        Dictionary<MongoId, TemplateItem> Items = templatesServer.GetItems();
+        TemplateItem item = new TemplateItem();
+        Items.TryGetValue("67069c8cee8138ed2f05ad34", out item);
+        mGUtils.WriteFile("item.json", mGUtils.Serialize(item));
     }
+    
 }
 
 public class TestClassJson1
@@ -55,8 +56,8 @@ public record TestRecordJson1
     [JsonPropertyName("_id")]
     public virtual required string Id
     {
-        get {return _id;}
-        set {_id = value== null ? null : new string(value);}
+        get => _id;
+        set => _id = value == null ? null : new string(value);
     }
 }
 
@@ -67,7 +68,7 @@ public record TestRecordJson2
     [JsonPropertyName("_id")]
     public virtual required MongoId Id
     {
-        get {return _id;}
-        set {_id = value== null ? null : new MongoId(value);}
+        get => _id;
+        set => _id = value == null ? null : new MongoId(value);
     }
 }
