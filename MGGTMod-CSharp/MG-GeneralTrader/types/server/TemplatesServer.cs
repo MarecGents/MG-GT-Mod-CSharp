@@ -93,7 +93,6 @@ public class TemplatesServer(
                         {
                             if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
                             filter.Filter.Add(fL.Key);
-                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的StackSlots", LogTextColor.Green);
                         }
                     } 
                 }
@@ -112,7 +111,6 @@ public class TemplatesServer(
                         {
                             if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
                             filter.Filter.Add(fL.Key);
-                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Slots", LogTextColor.Green);
                         }
                     } 
                 }
@@ -131,7 +129,6 @@ public class TemplatesServer(
                         {
                             if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
                             filter.Filter.Add(fL.Key);
-                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Chambers", LogTextColor.Green);
                         }
                     } 
                 }
@@ -150,7 +147,6 @@ public class TemplatesServer(
                         {
                             if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
                             filter.Filter.Add(fL.Key);
-                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Cartridges", LogTextColor.Green);
                         }
                     } 
                 }
@@ -169,7 +165,6 @@ public class TemplatesServer(
                         {
                             if (!filter.Filter.Contains(fL.Value) || filter.Filter.Contains(fL.Key)) continue;
                             filter.Filter.Add(fL.Key);
-                            mGUtils.Log_GT("AddFilter", $"id:{fL.Key}已添加到{itemId}的Grids", LogTextColor.Green);
                         }
                     } 
                 }
