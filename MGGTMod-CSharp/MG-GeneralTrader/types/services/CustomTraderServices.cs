@@ -93,9 +93,9 @@ public class CustomTraderServices
         if (Bundles.Manifest.Count > 0)
         {
             mainBundles.Manifest.AddRange(Bundles.Manifest);
+            mGUtils.DeleteFile(Paths.BundlesJson.FileName);
+            mGUtils.WriteFile(Paths.BundlesJson.FileName, mGUtils.Serialize(mainBundles));
         }
-        mGUtils.DeleteFile(Paths.BundlesJson.FileName);
-        mGUtils.WriteFile(Paths.BundlesJson.FileName, mGUtils.Serialize(mainBundles));
     }
 
     public bool AddTraderBaseToDB(string traderPath)
@@ -230,7 +230,7 @@ public class CustomTraderServices
         // image
         string traderImage = $"{traderInfo._id}.jpg";
         string imagePath = Path.Combine(traderPath,traderImage);
-        if (mGUtils.FileExists(imagePath))
+        if (mGUtils.FileExists(imagePath, false))
         {
             newTrader.Base.Avatar = newTrader.Base.Avatar.Replace("000000000000000000000000.jpg", traderImage);
             imageRouter.AddRoute(newTrader.Base.Avatar.Replace(".jpg",""), imagePath);
