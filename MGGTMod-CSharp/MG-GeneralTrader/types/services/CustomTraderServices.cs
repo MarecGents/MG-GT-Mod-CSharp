@@ -75,7 +75,7 @@ public class CustomTraderServices
             AddTraderLocationToDB(traderPath);
             AddTraderTemplatesToDB(traderPath);
             AddTraderGlobalsToDB(traderPath);
-            Log($"商人【{Path.GetFileName(traderPath)}】已添加。", LogTextColor.Yellow);
+            Log($"商人【{Path.GetFileName(traderPath)}】已添加。", LogTextColor.Green);
             BundleManifest bundles = mGUtils.GetJsonDataFromFile<BundleManifest>(new PathType
             {
                 FileName = TraderPathsType.TraderBundles,

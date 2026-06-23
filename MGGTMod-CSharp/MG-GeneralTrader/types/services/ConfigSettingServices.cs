@@ -34,6 +34,6 @@ public class ConfigSettingServices
     public async Task ModSetting()
     {
         customTraderServices.Start();
-         mGUtils.Log_GT("商人系统", "加载完毕。", LogTextColor.Yellow);
+        mGUtils.Log_GT("商人系统", "加载完毕。", LogTextColor.Green);
     }
 }

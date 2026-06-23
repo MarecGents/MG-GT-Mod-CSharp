@@ -225,7 +225,7 @@ public class MGUtils(
     }
     public void Log_GT(string server,string data, LogTextColor textColor)
     {
-        logger.LogWithColor($"[MG通用商人框架][{server}]：" + data, textColor);
+        logger.LogWithColor($"【MG通用商人框架】[{server}]：" + data, textColor);
     }
     public void TestOutput<T>(T data)
     {
