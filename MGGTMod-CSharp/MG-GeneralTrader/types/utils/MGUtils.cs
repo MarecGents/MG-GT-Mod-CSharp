@@ -140,9 +140,9 @@ public class MGUtils(
         return fileUtil.DirectoryExists(relativePath);
     }
    
-    public string[] GetDirectories(string relativePath = "")
+    public string[] GetDirectories(string relativePath = "", bool useModePath = true)
     {
-        var fullPath = System.IO.Path.Combine(modPath, relativePath);
+        var fullPath = useModePath? Path.Combine(modPath, relativePath):relativePath;
         if (Directory.Exists(fullPath))
         {
             var directories = fileUtil.GetDirectories(fullPath);
@@ -151,19 +151,23 @@ public class MGUtils(
         return Array.Empty<string>();
     }
     
-    public bool FileExists(string relativeFilePath)
+    public bool FileExists(string relativeFilePath, bool useModePath = true)
     {
-        return fileUtil.FileExists(System.IO.Path.Combine(modPath, relativeFilePath));
+        if(useModePath) return fileUtil.DirectoryExists(Path.Combine(modPath, relativeFilePath));
+        
+        return fileUtil.FileExists(relativeFilePath);
     }
     
-    public void DeleteFile(string relativeFilePath)
+    public void DeleteFile(string relativeFilePath, bool useModePath = true)
     {
-        fileUtil.DeleteFile(System.IO.Path.Combine(modPath, relativeFilePath));
+        if(useModePath) fileUtil.DeleteFile(Path.Combine(modPath, relativeFilePath));
+        fileUtil.DeleteFile(relativeFilePath);
     }
     
-    public void WriteFile(string relativeFilePath, string Data)
+    public void WriteFile(string relativeFilePath, string Data, bool useModePath = true)
     {
-        fileUtil.WriteFile(System.IO.Path.Combine(modPath, relativeFilePath), Data);
+        if(useModePath) fileUtil.WriteFile(Path.Combine(modPath, relativeFilePath), Data);
+        fileUtil.WriteFile(relativeFilePath, Data);
     }
 
     public string StripExtension(string filePath)
